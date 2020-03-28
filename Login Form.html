@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Login Form </title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Load jquery and bootstrap js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            LoginChecker = () => {
+                let username = 'telkom';
+                let password = 123;
+
+                if(document.getElementById('username').value == username && document.getElementById('password').value == password){
+                    alert('Selamat! Anda Berhasil Login')
+                }else{
+                    alert('Username / Password salah, Mohon Ulangi lagi')
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card=header"><h3>Login Form</h3></div>
+                    <div class="card-body">
+                        Username
+                        <input type="text" id="username" class="form-control">
+                        password
+                        <input type="text" id="password" class="form-control">
+                        <button type="buttom" class="btn btn-success btn-block" onclick="LoginChecker()">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
